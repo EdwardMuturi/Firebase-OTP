@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_intro_next">Next</string>
+    <string name="phone_number">716238698</string>
+    <string name="text_phone">Phone</string>
+    <string name="text_sms_code">Enter Code</string>
+    <string name="text_continue">Verify</string>
+    <string name="retry_string">RETRY</string>
+    <string name="text_no_internet">No internet, connect to internet and try again</string>
+    <string name="text_send_code">Send Code</string>
+    <string name="text_enter_verification_sms">Enter verification code sent to you via SMS</string>
+</resources>
