@@ -8,10 +8,10 @@ A phone authentication library using firebase auth sdk
      <!--replace activity name with yours i.e preceded by your package name-->
      
      <intent-filter>
-                <action android:name="com.mementoguy.MainActivity"/> 
+         <action android:name="com.mementoguy.MainActivity"/> 
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+         <category android:name="android.intent.category.DEFAULT" />
+     </intent-filter>
  ```
  * Pass the above activity name as intent extra when starting `RegisterActivity`. This helps the library know which activity to start after user phone is verified
 
