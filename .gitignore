@@ -13,5 +13,4 @@
 .externalNativeBuild
 .cxx
 /firebase-auth/build
-/firebase-auth/google-services.json
 firebase-auth/google-services.json
