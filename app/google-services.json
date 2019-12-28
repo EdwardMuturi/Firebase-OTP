@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "418544529495",
+    "firebase_url": "https://fir-phoneauth-ea7b4.firebaseio.com",
+    "project_id": "fir-phoneauth-ea7b4",
+    "storage_bucket": "fir-phoneauth-ea7b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418544529495:android:eaba36682efb2a6248b312",
+        "android_client_info": {
+          "package_name": "com.abiria.firebase_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418544529495-o1krlo216mrq2gq7jeu59lclgpqrkr9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOukIMsRcYgaFj6BaEJ2czigw7u3PMjnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418544529495-o1krlo216mrq2gq7jeu59lclgpqrkr9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418544529495:android:a14f19da2fe31abf48b312",
+        "android_client_info": {
+          "package_name": "com.mementoguy.firebasephoneauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418544529495-gdrbrjtp3hf72i1mlo0m1ki48bbt2fau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mementoguy.firebasephoneauth",
+            "certificate_hash": "f9c3c8f083ebb9a9bda2fd1980aeeec613efe354"
+          }
+        },
+        {
+          "client_id": "418544529495-6q3gckuvd4vkp1r4ueh6l21lruo29tuf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mementoguy.firebasephoneauth",
+            "certificate_hash": "830844e5648e09244e5a4c2592b4c8020836bcca"
+          }
+        },
+        {
+          "client_id": "418544529495-o1krlo216mrq2gq7jeu59lclgpqrkr9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOukIMsRcYgaFj6BaEJ2czigw7u3PMjnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418544529495-o1krlo216mrq2gq7jeu59lclgpqrkr9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
