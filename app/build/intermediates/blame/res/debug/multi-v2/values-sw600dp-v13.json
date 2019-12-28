@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/edward/AndroidStudioProjects/FirebasePhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/edward/StudioProjects/FirebasePhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/1609350979c35f6702a02fccad962d26/material-1.2.0-alpha01/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/0fa7cd9a25c919edd618b22f55d3cfb4/material-1.2.0-alpha01/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/6e9e77651783cee941be2f013ebc30a4/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/6f3322cdb6a1c48e22f38addfad7142a/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

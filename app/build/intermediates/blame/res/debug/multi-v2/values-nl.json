@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/edward/AndroidStudioProjects/FirebasePhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
+            "outputFile": "/Users/edward/StudioProjects/FirebasePhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
             "map": [
                 {
-                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/67b1515016996eab101b3a4affd1e868/jetified-play-services-base-17.1.0/res/values-nl/values.xml",
+                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/4a5d5e011099819d88e3e4bb1211f211/jetified-play-services-base-17.1.0/res/values-nl/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/6e9e77651783cee941be2f013ebc30a4/appcompat-1.1.0/res/values-nl/values-nl.xml",
+                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/6f3322cdb6a1c48e22f38addfad7142a/appcompat-1.1.0/res/values-nl/values-nl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/752c4f7914351f1a5a404646cb0b9dbe/jetified-play-services-basement-17.0.0/res/values-nl/values.xml",
+                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/c4eb030a51f04a031a8d8f7f56d15543/jetified-play-services-basement-17.0.0/res/values-nl/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/608d9f802744bb70e2e5594f1908a20e/core-1.2.0-alpha04/res/values-nl/values-nl.xml",
+                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/4cc125d0e7b581aff044fa0a6d9da79b/core-1.2.0-alpha04/res/values-nl/values-nl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

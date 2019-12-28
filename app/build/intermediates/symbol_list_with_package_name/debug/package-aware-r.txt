@@ -2129,6 +2129,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_register
+layout activity_splash
 layout country_code_picker_item_country
 layout country_code_picker_layout_code_picker
 layout country_code_picker_layout_picker_dialog
@@ -2229,6 +2230,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string activity_name_to_start
 string app_intro_next
 string app_name
 string appbar_scrolling_view_behavior
@@ -2987,11 +2989,19 @@ string country_zambia_number
 string country_zimbabwe_code
 string country_zimbabwe_name
 string country_zimbabwe_number
+string default_web_client_id
+string error_acvitity_4040
 string error_icon_content_description
 string error_unregister_carrier_number
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string mtrl_badge_numberless_content_description
@@ -3034,6 +3044,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string phone_code
 string phone_number
+string project_id
 string retry_string
 string search_hint
 string search_menu_title

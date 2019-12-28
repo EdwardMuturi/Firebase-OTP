@@ -8,7 +8,7 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0-beta03'
+        classpath 'com.android.tools.build:gradle:3.6.0-rc01'
         classpath Deps.kotlin_gradle_plugin
         classpath Deps.google_services_plugin
 

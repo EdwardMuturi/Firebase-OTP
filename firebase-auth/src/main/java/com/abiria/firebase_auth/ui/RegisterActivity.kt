@@ -2,11 +2,12 @@ package com.abiria.firebase_auth.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.TextUtils
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
+import com.abiria.firebase_auth.BuildConfig
 import com.abiria.firebase_auth.R
 import com.abiria.firebase_auth.utils.Constants
 import com.abiria.firebase_auth.viewmodel.RegisterViewModel
@@ -19,17 +20,15 @@ import kotlinx.android.synthetic.main.activity_register.*
 import java.util.concurrent.TimeUnit
 
 class RegisterActivity : AppCompatActivity() {
+
     private lateinit var registerViewModel: RegisterViewModel
-    private lateinit var firebaseAuth : FirebaseAuth
-
+    private val firebaseAuth = FirebaseAuth.getInstance()
     lateinit var mVerificationId: String
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
         FirebaseApp.initializeApp(this)
-        firebaseAuth = FirebaseAuth.getInstance()
 
         registerViewModel = ViewModelProviders.of(this).get(RegisterViewModel::class.java)
 
@@ -74,7 +73,7 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    fun authenticatePhone() {
+    private fun authenticatePhone() {
         registerViewModel.phone =
             ccp_code.selectedCountryCodeWithPlus + tiet_ccp_phone.text.toString().trim()
 
@@ -91,16 +90,11 @@ class RegisterActivity : AppCompatActivity() {
         showSmsViews()
     }
 
-
-    override fun onStart() {
-        super.onStart()
-    }
-
     private fun showSmsViews() {
         ccp_verify_btn.visibility = View.VISIBLE
         tiet_verification_code.visibility = View.VISIBLE
         til_verification_code.visibility = View.VISIBLE
-        mtv_verification_code_guide.visibility= View.VISIBLE
+        mtv_verification_code_guide.visibility = View.VISIBLE
     }
 
     private fun hidePhoneViews() {
@@ -114,7 +108,7 @@ class RegisterActivity : AppCompatActivity() {
         ccp_verify_btn.visibility = View.GONE
         tiet_verification_code.visibility = View.GONE
         til_verification_code.visibility = View.GONE
-        mtv_verification_code_guide.visibility= View.GONE
+        mtv_verification_code_guide.visibility = View.GONE
     }
 
     fun displayToast(message: String) {
@@ -125,9 +119,7 @@ class RegisterActivity : AppCompatActivity() {
     private val phoneAuthCallback =
         object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             override fun onVerificationCompleted(p0: PhoneAuthCredential) {
-                p0?.let { phoneAuth ->
-                    addPhoneNumber(phoneAuth)
-                }
+                addPhoneNumber(p0)
             }
 
             override fun onVerificationFailed(p0: FirebaseException) {
@@ -137,7 +129,7 @@ class RegisterActivity : AppCompatActivity() {
 
             override fun onCodeSent(p0: String, p1: PhoneAuthProvider.ForceResendingToken) {
                 super.onCodeSent(p0, p1)
-                mVerificationId = p0.toString()
+                mVerificationId = p0
             }
 
         }
@@ -155,9 +147,24 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun startMain() {
-        //TODO How do you pass this dynamically, inorder to use as library
-        startActivity(Intent("com.msafirismart.user.screens.MainActivity"))
+        if (intent.extras != null) {
+            val extraActivityName = intent.extras?.getString(Constants.EXTRA_ACTIVITY_NAME_TO_START)
+            startActivity(Intent(extraActivityName))
+        } else {
+            if (BuildConfig.DEBUG)
+                Toast.makeText(
+                    this,
+                    getString(R.string.error_acvitity_4040),
+                    Toast.LENGTH_LONG
+                ).show()
+            else
+                Log.e(
+                    RegisterActivity::class.java.simpleName,
+                    getString(R.string.error_acvitity_4040)
+                )
+        }
+
     }
 
-
 }
+

@@ -8,4 +8,5 @@
     <string name="text_no_internet">No internet, connect to internet and try again</string>
     <string name="text_send_code">Send Code</string>
     <string name="text_enter_verification_sms">Enter verification code sent to you via SMS</string>
+    <string name="error_acvitity_4040">Could not find passed activity name</string>
 </resources>

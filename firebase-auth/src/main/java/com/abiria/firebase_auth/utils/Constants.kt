@@ -12,6 +12,8 @@ import kotlinx.android.synthetic.main.activity_register.*
 class Constants {
 
     companion object {
+        const val EXTRA_ACTIVITY_NAME_TO_START = "ActivityToStart"
+
         lateinit var snackbar: Snackbar
 
         fun checkEmptyEditText(view: TextInputEditText): Boolean {
