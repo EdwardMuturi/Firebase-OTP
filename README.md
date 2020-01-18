@@ -1,4 +1,4 @@
-# [![FirebasePhoneAuth>](https://circleci.com/gh/EdwardMuturi/FirebasePhoneAuth.svg?style=svg)](https://app.circleci.com/jobs/github/EdwardMuturi/FirebasePhoneAuth/3)
+# FirebasePhoneAuth [![FirebasePhoneAuth>](https://circleci.com/gh/EdwardMuturi/FirebasePhoneAuth.svg?style=svg)](https://app.circleci.com/jobs/github/EdwardMuturi/FirebasePhoneAuth/3)
 
 A phone authentication library using firebase auth sdk
 
