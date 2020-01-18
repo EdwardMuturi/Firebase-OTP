@@ -9,4 +9,9 @@
     <string name="text_send_code">Send Code</string>
     <string name="text_enter_verification_sms">Enter verification code sent to you via SMS</string>
     <string name="error_acvitity_4040">Could not find passed activity name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_resend_code">Resend Code</string>
+    <string name="text_no_code">Didn\'t receive code?</string>
 </resources>

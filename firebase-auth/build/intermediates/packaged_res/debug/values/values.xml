@@ -5,6 +5,7 @@
     <dimen name="dimen_15dp">15dp</dimen>
     <dimen name="dimen_20dp">20dp</dimen>
     <dimen name="dimen_30dp">30dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
     <dimen name="dimen_progress_logout">50dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="register_button_corner_radius">30dp</dimen>
@@ -18,13 +19,16 @@
     <string name="google_app_id" translatable="false">1:418544529495:android:eaba36682efb2a6248b312</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBOukIMsRcYgaFj6BaEJ2czigw7u3PMjnk</string>
     <string name="google_storage_bucket" translatable="false">fir-phoneauth-ea7b4.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="phone_number">716238698</string>
     <string name="project_id" translatable="false">fir-phoneauth-ea7b4</string>
     <string name="retry_string">RETRY</string>
     <string name="text_continue">Verify</string>
     <string name="text_enter_verification_sms">Enter verification code sent to you via SMS</string>
+    <string name="text_no_code">Didn\'t receive code?</string>
     <string name="text_no_internet">No internet, connect to internet and try again</string>
     <string name="text_phone">Phone</string>
+    <string name="text_resend_code">Resend Code</string>
     <string name="text_send_code">Send Code</string>
     <string name="text_sms_code">Enter Code</string>
 </resources>

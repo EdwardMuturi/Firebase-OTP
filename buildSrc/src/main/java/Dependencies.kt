@@ -5,7 +5,7 @@ object Versions {
     val gradle_plugin = "3.6.0-beta04"
     val google_services = "4.3.2"
     val fire_auth = "19.1.0"
-    val lifecycle_version = "2.1.0"
+    val lifecycle_version = "2.2.0-rc02"
     val viewmodelscope_version= "2.2.0-alpha04"
     val room_version = "2.1.0"
     val ccp_version = "2.4.1"
@@ -42,6 +42,8 @@ object Versions {
     val dagger_version= "2.25.2"
     val timber_version= "4.7.1"
     val lottie_version= "3.2.0"
+    const val androidx_activity_version = "1.1.0-rc02"
+    const val androidx_fragment_version = "1.2.0-rc02"
 }
 
 object Deps {
@@ -100,5 +102,9 @@ object Deps {
     val timber= "com.jakewharton.timber:timber:${Versions.timber_version}"
     //Lottie
     val lottie= "com.airbnb.android:lottie:${Versions.lottie_version}"
+    const val androidx_activity =
+        "androidx.activity:activity-ktx:${Versions.androidx_activity_version}"
+    const val androidx_fragment =
+        "androidx.fragment:fragment-ktx:${Versions.androidx_fragment_version}"
 
 }

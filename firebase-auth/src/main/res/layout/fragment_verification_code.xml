@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.VerificationCodeFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_register"
+        android:layout_width="@dimen/dimen_progress_logout"
+        android:layout_height="@dimen/dimen_progress_logout"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/verification_input_container"
+        android:layout_height="match_parent">
+
+        <!-- Constraint Guidelines-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ccp_guideline_top"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent=".47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ccp_guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_percent=".32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--    Verication views-->
+
+        <TextView
+            android:id="@+id/mtv_verification_code_guide"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:text="@string/text_enter_verification_sms"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/ccp_guideline_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_verification_code"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:hint="@string/text_sms_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ccp_guideline_top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:paddingEnd="@dimen/dimen_0dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ccp_verify_btn"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/register_button_height"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:text="@string/text_continue"
+            app:cornerRadius="@dimen/register_button_corner_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_verification_code" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_resend_label"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:gravity="end"
+            android:text="@string/text_no_code"
+            android:textSize="18sp"
+            app:cornerRadius="@dimen/register_button_corner_radius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_resend_code"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_resend_code"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:text="@string/text_resend_code"
+            android:textAlignment="viewStart"
+            android:textColor="#9b0000"
+            android:textSize="18sp"
+            app:cornerRadius="@dimen/register_button_corner_radius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_resend_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

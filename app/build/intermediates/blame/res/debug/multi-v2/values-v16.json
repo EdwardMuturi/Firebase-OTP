@@ -4,7 +4,7 @@
             "outputFile": "/Users/edward/StudioProjects/FirebasePhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/4cc125d0e7b581aff044fa0a6d9da79b/core-1.2.0-alpha04/res/values-v16/values-v16.xml",
+                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/591918727bcecefd940a8658bca3c94d/core-1.2.0-alpha04/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/6f3322cdb6a1c48e22f38addfad7142a/appcompat-1.1.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/edward/.gradle/caches/transforms-2/files-2.1/aafe31c8b44f0d6cedbef9ba4ea2d560/appcompat-1.1.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

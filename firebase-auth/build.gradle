@@ -23,6 +23,15 @@ android {
         }
     }
 
+    compileOptions{
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions{
+        jvmTarget = "1.8"
+    }
+
 }
 
 dependencies {
@@ -34,9 +43,12 @@ dependencies {
     implementation Deps.lifecycle
     implementation Deps.material
     implementation Deps.ccp
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation Deps.junit
     androidTestImplementation Deps.junit_ext
     androidTestImplementation Deps.espresso
+    implementation Deps.androidx_activity
+    implementation Deps.androidx_fragment
 }
 
 apply plugin: 'com.google.gms.google-services'

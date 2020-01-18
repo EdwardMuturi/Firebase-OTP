@@ -5,6 +5,7 @@ dimen dimen_10dp
 dimen dimen_15dp
 dimen dimen_20dp
 dimen dimen_30dp
+dimen dimen_5dp
 dimen dimen_progress_logout
 dimen fab_margin
 dimen register_button_corner_radius
@@ -21,7 +22,12 @@ id tiet_ccp_phone
 id tiet_verification_code
 id til_ccp_phone
 id til_verification_code
+id tv_resend_code
+id tv_resend_label
+id verification_input_container
 layout activity_register
+layout fragment_phone_registration
+layout fragment_verification_code
 string app_intro_next
 string default_web_client_id
 string error_acvitity_4040
@@ -31,12 +37,15 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string phone_number
 string project_id
 string retry_string
 string text_continue
 string text_enter_verification_sms
+string text_no_code
 string text_no_internet
 string text_phone
+string text_resend_code
 string text_send_code
 string text_sms_code
